@@ -6,21 +6,22 @@ package exercicio2;
  */
 public class Principal {
 
-    FabricaJogos fabricaJogosAdultos = new FabricaJogosAdultos();
-    FabricaJogos fabricaJogosInfantis = new FabricaJogosInf();
+    public static void main(String[] args) {
+        FabricaJogos fabricaJogosAdultos = new FabricaJogosAdultos();
+        FabricaJogos fabricaJogosInfantis = new FabricaJogosInf();
 
-    JogoTabuleiro jogoTabAdulto = fabricaJogosAdultos.criarJogoTabuleiro();
-    JogoCartas jogoCartaAdulto = fabricaJogosAdultos.criarJogoCartas();
+        JogoTabuleiro jogoTabAdulto = fabricaJogosAdultos.criarJogoTabuleiro();
+        JogoCartas jogoCartaAdulto = fabricaJogosAdultos.criarJogoCartas();
 
-    jogoTabuleiroAdulto.jogar;
+        jogoTabAdulto.jogar();
 
-    jogoCartasAdulto.embaralhar ();
+        jogoCartaAdulto.embaralhar();
 
-    JogoTabuleiro jogoTabuleiroInfantil = fabricaJogosInfantis.criarJogoTabuleiro();
-    JogoCartas jogoCartasInfantil = fabricaJogosInfantis.criarJogoCartas();
+        JogoTabuleiro jogoTabuleiroInfantil = fabricaJogosInfantis.criarJogoTabuleiro();
+        JogoCartas jogoCartasInfantil = fabricaJogosInfantis.criarJogoCartas();
 
-    jogoTabuleiroInfantil.jogar ();
+        jogoTabuleiroInfantil.jogar();
 
-    jogoCartasInfantil.embaralhar ();
-
+        jogoCartasInfantil.embaralhar();
+    }
 }
